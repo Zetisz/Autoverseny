@@ -13,9 +13,12 @@
             <RowDefinition Height="10"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Button x:Name="Start" Content="Start" Width="90" Height="45" Background="CornflowerBlue" Grid.Row="1" Click="Start_Click"/>
+        <Button x:Name="Start" Content="Start" Width="90" Height="45" Background="CornflowerBlue" Foreground="WhiteSmoke" Grid.Row="1" Click="Start_Click"/>
         <Canvas x:Name="Palya" Background="AliceBlue" Grid.Row="3">
-            <Button x:Name="Auto" Width="90" Height="45" Background="Crimson" Canvas.Left="20" Canvas.Top="50"/>
+            <Label x:Name="Auto" Width="90" Height="45" DataContext="Ferrari" Background="Crimson" Canvas.Left="20" Canvas.Top="50"/>
+            <Label x:Name="Auto_2" Width="90" Height="45" DataContext="Skoda" Background="DarkSeaGreen" Canvas.Left="20" Canvas.Top="150"/>
+            <Label x:Name="Auto_3" Width="90" Height="45" DataContext="Porsche" Background="DarkSlateBlue" Canvas.Left="20" Canvas.Top="250"/>
+            <Label Width="20" Height="350" Background="DarkGray" Canvas.Right="30" Canvas.Top="0"/>
         </Canvas>
     </Grid>
 </Window>
