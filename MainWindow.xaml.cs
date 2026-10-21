@@ -52,6 +52,8 @@ namespace Autoverseny
         private void Start_Click(object sender, RoutedEventArgs e)
         {
             Canvas.SetLeft(Auto, 20);
+            Canvas.SetLeft(Auto_2, 20);
+            Canvas.SetLeft(Auto_3, 20);
             timer.Start();
         }
     }
